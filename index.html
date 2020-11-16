@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Oral Health Screening</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-flex  mb-2">
+            <img style="height: 70px !important;" src="clean.png" />
+            <h1 class="h2 mb-0 font-weight-bold  text-gray-800">Oral Health Screening: Basic by <span
+                id="CompanyName"></span>
+              <img id="company_logo" style="height:50px ; " src="logyai.png"><br />
+              <div style="padding: 0;font-size:large;"> &nbsp; Powered by Logy.AI</div>
+            </h1>
+
+
+            <!-- 
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+           -->
+
+
+          </div>
+
+
+          <script>
+            function update_report(input) {
+              if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                  $('#company_logo')
+                    .attr('src', e.target.result);
+                  document.getElementById('logo-form').style.display = "none"
+                  document.getElementById('CompanyName').innerHTML = document.getElementById('campany_name_value').value
+
+                };
+
+                reader.readAsDataURL(input.files[0]);
+              }
+            }
+          </script>
+
+          <section id="logo-form" class="card border-left-primary shadow h-100 py-2 mb-4">
+            <div class="card-body">
+              <div class="input-group">
+                <form class="form">
+                  <div class="form-group">
+                    <input  id="campany_name_value" class="form-control form-control-user" type="text"
+                      placeholder="Name of the company (Optional)" />
+                      
+                  </div>
+                </form>
+              </div>
+           
+              <div class="input-group">
+
+                
+                <form class="form">
+
+                  
+                  
+                    <input id="file_value" onchange="update_report(this);" accept="image/*" class="form-control custom-file-input"
+                      type="file" placeholder="Upload company logo"/>
+                    <label class="custom-file-label">Click here to upload logo</label>
+                
+                  
+
+
+                 
+                </form>
+                <script>
+                  // Add the following code if you want the name of the file appear on select
+                  $(".custom-file-input").on("change", function () {
+                    var fileName = "Images to be uploaded: " + $(this)[0].files.length;
+                    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+                  });
+                </script>
+
+
+              </div>
+            </div>
+          </section>
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <h4 class="text-xs font-weight-bold text-primary text-uppercase mb-1">Name</h4>
+                      <h4 class="h4 mb-0 font-weight-bold text-gray-800">
+                        Karen
+                      </h4>
+                      <h4 class="text-xs font-weight-bold text-success text-uppercase mb-1">Age | Gender</h4>
+                      <h4 class="h4 mb-0 font-weight-bold text-gray-800">
+                        30 |
+                        Female
+                      </h4>
+                      <h4 class="text-xs font-weight-bold text-success text-uppercase mb-1">Brushing habits
+                      </h4>
+                      <h4 class="h4 mb-0 font-weight-bold text-gray-800">
+                        Twice daily
+                      </h4>
+                      <h4 class="text-xs font-weight-bold text-success text-uppercase mb-1">Tobacco Habits</h4>
+                      <h4 class="h4 mb-0 font-weight-bold text-gray-800">
+                        Yes
+                      </h4>
+                      <h4 class="text-xs font-weight-bold text-success text-uppercase mb-1">Dentist Visit</h4>
+                      <h4 class="h4 mb-0 font-weight-bold text-gray-800">
+                        As per need
+                      </h4>
+                    </div>
+                  </div>
+                  <!-- <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div align="center" class="col mb-2">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div align="center">
+                    <h2 class="m-0 text-primary"><span class="font-weight-bold "> Remark:</span>
+                      Fair
+                    </h2>
+                    <img width="40%" src="smiley-03.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Row -->
+          </div>
+
+          <div class="row">
+            <!-- Project Card Example -->
+            <div class="col">
+              <div class="card shadow mb-2">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary"> Screening Report</h6>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div align="center">
+                        <img style="height:100% !important; width:100%" src="example2.jpg" />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <a href="#" style="font-size: 1em;" class="btn btn-secondary btn-icon-split btn-lg">
+                        <span class="icon ">
+                          stain
+                        </span>
+                        <span class="text">1</span>
+                      </a>
+                      <br />
+                      <br />
+                      <a href="#" style="font-size: 1em;" class="btn btn-secondary btn-icon-split btn-lg">
+                        <span class="icon ">
+                          caries
+                        </span>
+                        <span class="text">2</span>
+                      </a>
+                      <br />
+                      <br />
+
+                    </div>
+
+
+                    <div class="col-5">
+                      <div align="center">
+
+                        <h2 class="m-0 "><span class="font-weight-bold text-gray-900 "> Do you know?</span> </h2>
+                        <br />
+                        <img width="25%" src="earth.svg" />
+                        <br />
+                        <br />
+                        <h6 class="font-weight-bold" style="color:black">
+                          50 percent of world’s
+                          population suffers from oral diseases(WHO)</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <!-- Project Card Example -->
+            <div class="col">
+              <div class="card shadow mb-2">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-danger">Your risk assessment for the next 6 months:</h6>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+
+
+                      <div class="row">
+                        <div class="col-2">
+
+                          <img style="background-color: ebf2fa;" width="100%" src="bleedinggums.png" />
+                        </div>
+                        <div class="col">
+
+                          <h6 class="m-0 font-weight-bold  text-danger"><span style="font-size: 1.2em;"
+                              class="m-0 ">Chance of
+                              Bleeding Gums: Very Likely</span>
+
+                          </h6>
+
+
+                          <div class="progress">
+
+                            <div class="  progress-bar  bg-danger " role="progressbar" style="width: 62%"
+                              aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                      <br />
+                      <div class="row">
+                        <div class="col-2">
+
+                          <img style="background-color: ebf2fa;" width="100%" src="treatment-09.png" />
+                        </div>
+                        <div class="col">
+
+                          <h6 class="m-0 font-weight-bold  text-danger"><span style="font-size: 1.2em;" class="m-0 ">
+
+                              Chance of Tooth Sensitivity: Very Likely</span>
+
+                          </h6>
+
+
+                          <div class="progress">
+
+                            <div class="  progress-bar  bg-danger " role="progressbar" style="width: 64%"
+                              aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                      <br />
+                      <!-- <div class="row">
+                        <div class="col-2">
+
+                          <img style="background-color: ebf2fa;" width="100%" src="treatment-08.png" />
+                        </div>
+                        <div class="col">
+
+                          <h6 class="m-0 font-weight-bold  text-danger"><span style="font-size: 1.2em;" class="m-0 ">
+                              
+                              Chance of Tooth Decay: Very Likely</span>
+
+                          </h6>
+
+
+                          <div class="progress">
+
+                            <div class="  progress-bar  bg-danger " role="progressbar" style="width: 66%"
+                              aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+
+                          </div>
+
+                        </div>
+
+
+                      </div> -->
+
+
+
+
+                    </div>
+                    <div class="col">
+
+
+                      <!-- <div class="row">
+                        <div class="col-2">
+
+                          <img style="background-color: ebf2fa;" width="100%" src="ulcer-01.png" />
+                        </div>
+                        <div class="col">
+
+                          <h6 class="m-0 font-weight-bold  text-danger"><span style="font-size: 1.2em;" class="m-0 ">
+                              
+                              Chance of Ulcers: Very Likely</span>
+
+                          </h6>
+
+
+                          <div class="progress">
+
+                            <div class="  progress-bar  bg-danger " role="progressbar" style="width: 63%"
+                              aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+
+                          </div>
+
+                        </div>
+
+
+                      </div> -->
+                      <!-- <br /> -->
+                      <div class="row">
+                        <div class="col-2">
+
+                          <img style="background-color: ebf2fa;" width="100%" src="treatment-06.png" />
+                        </div>
+                        <div class="col">
+
+                          <h6 class="m-0 font-weight-bold  text-danger"><span style="font-size: 1.2em;" class="m-0 ">
+
+                              Chance of Bad Breath: Very Likely</span>
+                          </h6>
+                          <div class="progress">
+                            <div class="  progress-bar  bg-danger " role="progressbar" style="width: 65%"
+                              aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                      <!-- <br />
+                      <div class="row">
+                        <div class="col-2">
+
+                          <img style="background-color: ebf2fa;" width="100%" src="teeth.svg" />
+                        </div>
+                        <div class="col">
+
+                          <h6 class="m-0 font-weight-bold  text-danger"><span style="font-size: 1.2em;" class="m-0 ">
+                              
+                              Chance of Tooth Loss: Very Likely</span>
+
+                          </h6>
+
+
+                          <div class="progress">
+
+                            <div class="  progress-bar  bg-danger " role="progressbar" style="width: 63%"
+                              aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+
+                          </div>
+
+                        </div>
+
+                      </div> -->
+
+
+                    </div>
+
+
+                  </div>
+                  <br />
+                  <div align="center">
+                    <h2 class="title font-weight-bold"> Oral healthcare can't wait, go for Logy.<span
+                        style="color:#428bbc">AI</span> <span style="color:red">Advanced analysis</span></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Project Card Example -->
+            <div class="col">
+              <div class="card shadow mb-2">
+
+                <div align="center" class="row">
+
+
+                  <div class="col">
+
+
+                    <div class="text-gray-900 card-body">
+                      <h6 class="font-weight-bold">Brush twice daily</h6><br />
+                      <img width="50%" src="treatment-01.png" />
+                    </div>
+
+
+                  </div>
+
+                  <div class="col">
+
+
+                    <div class=" text-gray-900 card-body">
+                      <h6 class="font-weight-bold">Floss daily</h6><br />
+                      <img width="50%" src="treatment-05.png" />
+                    </div>
+
+
+                  </div>
+
+                  <div class="col">
+
+
+                    <div class="text-gray-900 card-body">
+                      <h6 class="font-weight-bold">Use Mouthwash</h6><br />
+                      <img width="50%" src="treatment-02.png" />
+                    </div>
+
+
+                  </div>
+
+                  <div class="col">
+
+
+                    <div class=" text-gray-900 card-body">
+                      <h6 class="font-weight-bold">Annual dental checkups</h6><br />
+                      <img width="50%" src="treatment-03.png" />
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+                <div style="font-size: 0.75em;" class="card-body">
+
+                  To know more about these dental terms, please click here: <a
+                    href="https://logy.ai/blogs/dentistry_made_easy_part_one.html">https://logy.ai/blogs/dentistry_made_easy_part_one</a>
+                  <br />
+                  This is a machine generated report. This machine was trained by a team of certified dentists and data
+                  scientists. This report is just for screening purpose. Please read our terms and conditions at <a
+                    href="https://logy.ai">logy.ai</a> for more information.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+      </div>
+      <!-- End of Page Wrapper -->
+
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+      </a>
+
+      <!-- Logout Modal-->
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title" id="exampleModalLabel">Ready to Leave?</h6>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap core JavaScript-->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Core plugin JavaScript-->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Custom scripts for all pages-->
+      <script src="js/sb-admin-2.min.js"></script>
+
+      <!-- Page level plugins -->
+      <script src="vendor/chart.js/Chart.min.js"></script>
+
+      <!-- Page level custom scripts -->
+      <script src="js/demo/chart-area-demo.js"></script>
+      <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
